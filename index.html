@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <title>Bootstrap Store</title>
+</head>
+
+<body class="bg-secondary">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./pexels-alexandru-rotariu-733416.jpg" alt="" style="width:40px;" class="rounded-pill">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#dogs">Dogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cats">Cats</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hats">Accessories</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <h1 class="text-center bg-dark text-light mt-5 p-5 m-5 rounded-pill">
+            <marquee>🦴Mike's Pet World 🐶 Mike's Pet World 🐱Mike's Pet World 🦴Mike's Pet World 🐶 Mike's Pet World
+                🐱Mike's Pet World 🦴Mike's Pet World 🐶 Mike's Pet World 🐱Mike's Pet World 🦴Mike's Pet World 🐶
+                Mike's Pet World 🐱Mike's Pet World 🦴</marquee>
+        </h1>
+        <hr>
+    </header>
+
+    <main>
+        <div class="d-flex justify-content-center flex-column align-items-center">
+            <legend class="text-center">
+                <h2 class="text-light">Login to Mike's Pet World!</h2>
+            </legend>
+            <fieldset>
+                <form action="/action_page.php">
+                    <div class="mb-3 mt-3">
+                        <label for="email" class="form-label text-light">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label text-light">Password:</label>
+                        <input type="password" class="form-control " id="pwd" placeholder="Enter password" name="pswd">
+                    </div>
+                    <div class="form-check mb-3">
+                        <label class="form-check-label text-light">
+                            <input class="form-check-input" type="checkbox" name="remember" checked> Remember me
+                        </label>
+                    </div>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend class="text-light">Are you interested in a:</legend>
+                <div class="align-items-center">
+                    <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something"
+                        checked>
+                    <label class="form-check-label text-light">Dog</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something"
+                        checked>
+                    <label class="form-check-label text-light">Cat</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something"
+                        checked>
+                    <label class="form-check-label text-light">Accessory</label>
+                </div>
+            </fieldset>
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <br>
+        </div>
+        <div class="d-flex justify-content-center">
+            <h2 class="text-center text-light p-2 rounded-pill w-100" id="dogs">Mike's Dogs</h2>
+        </div>
+        <div class="d-flex justify-content-around">
+            <div class="card">
+                <img class="card-img-top" src="./pexels-gilberto-reyes-825947.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Mike</h4>
+                    <p class="card-text">Lean and mean</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./pexels-dominika-roseclay-2023384.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Pirate</h4>
+                    <p class="card-text">Arrr! The one-eyed wonder</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./pexels-binyamin-mellish-169524.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Foot Long</h4>
+                    <p class="card-text">A little hot dog</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h2 class="text-center text-light p-2 rounded-pill" id="cats">Mike's Cats</h2>
+        <div class="d-flex justify-content-around">
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="./pexels-helena-lopes-8076291.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Dakota</h4>
+                    <p class="card-text">Just a kitten</p>
+                    <a href="#" class="btn btn-danger">See Profile</a>
+                </div>
+            </div>
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="./pexels-harvey-mandt-4914053.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Michael</h4>
+                    <p class="card-text">Always on alert</p>
+                    <a href="#" class="btn btn-danger">See Profile</a>
+                </div>
+            </div>
+            <div class="card" style="width:300px">
+                <img class="card-img-top" src="./pexels-gord-maclean-1661407.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Vince</h4>
+                    <p class="card-text">Just hangin out</p>
+                    <a href="#" class="btn btn-danger">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h2 class="text-center bg-dark text-light p-2 rounded-pill" id="hats">Mike's Hats</h2>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./hat-2738831_1920.png" alt="Los Angeles" class="d-block mx-auto w-50">
+                </div>
+                <div class="carousel-item">
+                    <img src="./hat-4579982_1920.png" alt="Chicago" class="d-block mx-auto w-50">
+                </div>
+                <div class="carousel-item">
+                    <img src="./cowboy-40676_1280.png" alt="New York" class="d-block mx-auto w-50">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </main>
+
+    <footer class="fixed-bottom">
+        <marquee class="bg-dark text-light">
+            <h5>🦴Mike's Pet World 🐶 Mike's Pet World 🐱Mike's Pet World 🦴Mike's Pet World 🐶 Mike's Pet World
+                🐱Mike's Pet World 🦴 🦴Mike's Pet World 🐶 Mike's Pet World 🐱Mike's Pet World 🦴Mike's Pet World 🐶
+                Mike's Pet World 🐱Mike's Pet World 🦴Mike's Pet World 🐶 Mike's Pet World 🐱Mike's Pet World 🦴Mike's
+                Pet World 🐶 Mike's Pet World 🐱Mike's Pet World 🦴 🦴Mike's Pet World 🐶 Mike's Pet World 🐱Mike's Pet
+                World 🦴Mike's Pet World 🐶 Mike's Pet World 🐱Mike's Pet World</h5>
+        </marquee>
+    </footer>
+
+    <script src="./bootstrap5.js"></script>
+    <script src="./popper.js"></script>
+</body>
+
+</html>
